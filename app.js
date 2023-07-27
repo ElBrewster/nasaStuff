@@ -6,6 +6,9 @@ var logger = require('morgan');
 require("dotenv").config();
 
 var indexRouter = require('./routes/index');
+const curiosityRouter = require("./routes/curiosity");
+const opportunityRouter = require("./routes/opportunity");
+const spiritRouter = require("./routes/spirit");
 
 var app = express();
 const helmet = require("helmet");
@@ -29,6 +32,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use("/curiosity", curiosityRouter);
+app.use("/opportunity", opportunityRouter);
+app.use("/spirit", spiritRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
