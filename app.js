@@ -8,6 +8,7 @@ require("dotenv").config();
 var indexRouter = require('./routes/index');
 const curiosityRouter = require("./routes/curiosity");
 const opportunityRouter = require("./routes/opportunity");
+const perseveranceRouter = require("./routes/perseverance");
 const spiritRouter = require("./routes/spirit");
 
 var app = express();
@@ -35,6 +36,7 @@ app.use('/', indexRouter);
 app.use("/curiosity", curiosityRouter);
 app.use("/opportunity", opportunityRouter);
 app.use("/spirit", spiritRouter);
+app.use("/perseverance", perseveranceRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
