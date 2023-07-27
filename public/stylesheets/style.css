@@ -17,16 +17,12 @@ dd {
   margin: 0;
 }
 
-body {
-  font-family: 'REM', sans-serif;
-  line-height: 1.5;
-  min-height: 100vh;
-}
-
+svg,
 img,
 picture {
-  max-width: 100%;
+  align-self: center;
   display: block;
+  max-width: 100%;
 }
 
 input, 
@@ -39,4 +35,33 @@ select {
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
+}
+
+body {
+  background-color: #0A0A0A;
+  color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  font-family: 'REM', sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+header {
+  min-width: 100vw;
+  text-align: center;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 100vw;
+}
+
+footer {
+  display: flex;
+  min-width: 100vw;
+  text-align: center;
 }
