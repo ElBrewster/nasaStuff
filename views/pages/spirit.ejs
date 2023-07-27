@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <%- include("partials/head.ejs") %>
+  <body>
+    <%- include("partials/header.ejs") %>
+    <main>
+      <section>
+        <% parsedData.forEach((picture) => { %>
+          <article>
+            <h2>Snapshot from camera <%= picture.camera.name %></h2>
+            <p>Earth date: <%= picture.earth_date %></p>
+            <p>Mars sol: <%= picture.sol %></p>
+            <div class="image-container">
+              <a href="">
+                <img src="<%= picture.img_src %>" alt="from camera <%= picture.camera.name %> on <%= picture.earth_date %>">
+              </a>
+            </div>
+          </article>
+        <% }); %>
+      </section>
+    </main>
+    <%- include("partials/footer.ejs") %>
+  </body>
+</html>
