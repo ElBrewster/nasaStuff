@@ -58,6 +58,7 @@ main {
   flex-direction: column;
   flex: 1;
   min-width: 100vw;
+  padding: .5rem;
 }
 
 footer {
@@ -71,6 +72,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: .5rem;
+  justify-content: center;
 }
 
 article {
