@@ -4,14 +4,18 @@
   <body>
     <%- include("partials/header.ejs") %>
     <main>
-      <% parsedData.forEach((picture) => { %>
-        <section>
-          <h2>Snapshot from camera <%= picture.camera.name %></h2>
-          <p>Earth date: <%= picture.earth_date %></p>
-          <p>Mars sol: <%= picture.sol %></p>
-          <img src="<%= picture.img_src %>" alt="from camera <%= picture.camera.name %> on <%= picture.earth_date %>">
-        </section>
-      <% }); %>
+      <section>
+        <% parsedData.forEach((picture) => { %>
+          <article>
+            <h2>Snapshot from camera <%= picture.camera.name %></h2>
+            <p>Earth date: <%= picture.earth_date %></p>
+            <p>Mars sol: <%= picture.sol %></p>
+            <div class="image-container">
+              <img src="<%= picture.img_src %>" alt="from camera <%= picture.camera.name %> on <%= picture.earth_date %>">
+            </div>
+          </article>
+        <% }); %>
+      </section>
     </main>
     <%- include("partials/footer.ejs") %>
   </body>

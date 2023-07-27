@@ -67,7 +67,22 @@ footer {
 }
 
 section {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+article {
+  border: 1px solid gray;
   display: flex;
   flex-direction: column;
   max-width: 200px;
+  padding: 1rem;
+}
+
+.image-container {
+  background-color: #0A0A0A;
+  min-width: 166px;
+  min-height: 166px;
 }
