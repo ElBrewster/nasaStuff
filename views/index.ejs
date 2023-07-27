@@ -4,7 +4,13 @@
   <body>
     <%- include("partials/header.ejs") %>
     <main>
-      <p>Welcome to <%= title %></p>
+      <% parsedData.forEach((picture) => { %>
+        <%= picture.camera.name %>
+        <section>
+          <h2>Image taken from camera <%= picture.camera.name %>: </h2>
+          <img src="<%= picture.img_src %>" alt="from camera <%= picture.camera.name %> on <%= picture.earth_date %>">
+        </section>
+      <% }); %>
     </main>
     <%- include("partials/footer.ejs") %>
   </body>

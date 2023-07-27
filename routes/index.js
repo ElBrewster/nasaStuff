@@ -18,8 +18,15 @@ router.get('/', function(req, res, next) {
     // console.log(error);
     // console.log("===================The Response===================");
     // console.log(response);
+    // console.log(roverData);
+    const parsedData = JSON.parse(roverData);
+    // console.log(parsedData.photos[0]);
+    // res.json(parsedData);
+    res.render("index", {
+      parsedData: parsedData.photos
+    })
   })
-  res.render('index', { title: 'My Express Space App' });
+  // res.render('index', { title: 'My Express Space App' });
   // console.log("apiKey: ", apiKey)
 });
 

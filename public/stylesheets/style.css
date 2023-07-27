@@ -65,3 +65,9 @@ footer {
   min-width: 100vw;
   text-align: center;
 }
+
+section {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
