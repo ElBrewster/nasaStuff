@@ -16,7 +16,8 @@ let today = `${nowYear}-${nowMonth}-${nowDay}`;
 
 const apiKey = process.env.API_KEY;
 
-const roversList = ["CURIOSITY", "OPPORTUNITY", "PERSEVERANCE", "SPIRIT"];
+const roversList = ["curiosity", "opportunity", "perseverance", "spirit"];
+
 // * Mars Rover Photos
 const apiRoversUrlDefault = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity";
 const apiRoversUrl = "https://api.nasa.gov/mars-photos/api/v1/rovers";

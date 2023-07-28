@@ -74,6 +74,7 @@ li {
 a {
   color: silver;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 main {
