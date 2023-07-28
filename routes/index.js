@@ -16,6 +16,7 @@ let today = `${nowYear}-${nowMonth}-${nowDay}`;
 
 const apiKey = process.env.API_KEY;
 
+const roversList = ["curiosity", "opportunity", "perseverance", "spirit"];
 // * Mars Rover Photos
 const apiRoversUrlDefault = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity";
 const apiRoversUrl = "https://api.nasa.gov/mars-photos/api/v1/rovers";
@@ -32,6 +33,7 @@ const currentPhoto = `${apiRoversUrlDefault}${apiParamLatestPhotos}`;
 const picturesToday = `${apiRoversUrl}/roverName${apiParamEarthDate}`;
 // template ^
 router.use((req, res, next) => {
+  res.locals.roversList = roversList;
   res.locals.apiRoversUrl = apiRoversUrl;
   res.locals.apiParamEarthDate = apiParamEarthDate;
   next();
