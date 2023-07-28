@@ -25,12 +25,6 @@ const mostRecentPhotos = `${apiUrl}${apiParamLatestPhotos}`;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  // request.get(mostRecentPhotos, (error, response, roverData) => {
-  //   const parsedData = JSON.parse(roverData);
-  //   res.render("index", {
-  //     parsedData: parsedData.photos
-  //   })
-  // });
   request.get(mostRecentPhotos, (error, response, roverData) => {
     const parsedData = JSON.parse(roverData);
     res.render("index", {
