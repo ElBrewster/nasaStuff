@@ -53,6 +53,10 @@ header {
   text-align: center;
 }
 
+.app-title{
+  text-transform: none;
+} 
+
 nav {
   display: flex;
 }
