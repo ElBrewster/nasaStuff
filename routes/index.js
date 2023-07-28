@@ -20,7 +20,7 @@ const roversList = ["curiosity", "opportunity", "perseverance", "spirit"];
 
 // * Mars Rover Photos
 const apiRoversUrlDefault = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity";
-const apiRoversUrl = "https://api.nasa.gov/mars-photos/api/v1/rovers";
+const apiRoversBaseUrl = "https://api.nasa.gov/mars-photos/api/v1/rovers";
 //need rover name after this url piece ^
 const apiParamSol = `/photos?sol=1000&api_key=${apiKey}`;
 const apiParamCamera = `/photos?sol=1000&camera=fhaz&api_key=${apiKey}`;
@@ -29,13 +29,14 @@ const apiPage2 = `/photos?sol=1000&page=2&api_key=${apiKey}`;
 const apiParamEarthDate = `/photos?earth_date=${today}&page=1&api_key=${apiKey}`;
 
 const apiParamLatestPhotos = `/latest_photos?api_key=${apiKey}`;
-//https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY
+
+
 const currentPhoto = `${apiRoversUrlDefault}${apiParamLatestPhotos}`;
-const picturesToday = `${apiRoversUrl}/roverName${apiParamEarthDate}`;
+const picturesToday = `${apiRoversBaseUrl}/roverName${apiParamEarthDate}`;
 // template ^
 router.use((req, res, next) => {
   res.locals.roversList = roversList;
-  res.locals.apiRoversUrl = apiRoversUrl;
+  res.locals.apiRoversBaseUrl = apiRoversBaseUrl;
   res.locals.apiParamEarthDate = apiParamEarthDate;
   next();
 });
@@ -51,7 +52,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get("/curiosity", (req, res, next) => {
-  const curiosityPicsToday = `${apiRoversUrl}/curiosity${apiParamLatestPhotos}`;
+  const curiosityPicsToday = `${apiRoversBaseUrl}/curiosity${apiParamLatestPhotos}`;
   request.get(curiosityPicsToday, (error, response, curiosityData) => {
     const parsedData2 = JSON.parse(curiosityData);
     res.render("curiosity", {
@@ -60,8 +61,12 @@ router.get("/curiosity", (req, res, next) => {
   })
 });
 
+router.get("/curiosity/:id", (req, res, next) => {
+  res.json(req.params.id);
+});
+
 router.get("/opportunity", (req, res, next) => {
-  const curiosityPicsToday = `${apiRoversUrl}/opportunity${apiParamLatestPhotos}`;
+  const curiosityPicsToday = `${apiRoversBaseUrl}/opportunity${apiParamLatestPhotos}`;
   request.get(curiosityPicsToday, (error, response, curiosityData) => {
     const parsedData3 = JSON.parse(curiosityData);
     res.render("opportunity", {
@@ -71,7 +76,7 @@ router.get("/opportunity", (req, res, next) => {
 });
 
 router.get("/perseverance", (req, res, next) => {
-  const curiosityPicsToday = `${apiRoversUrl}/perseverance${apiParamLatestPhotos}`;
+  const curiosityPicsToday = `${apiRoversBaseUrl}/perseverance${apiParamLatestPhotos}`;
   request.get(curiosityPicsToday, (error, response, curiosityData) => {
     const parsedData4 = JSON.parse(curiosityData);
     res.render("perseverance", {
@@ -81,7 +86,7 @@ router.get("/perseverance", (req, res, next) => {
 });
 
 router.get("/spirit", (req, res, next) => {
-  const curiosityPicsToday = `${apiRoversUrl}/spirit${apiParamLatestPhotos}`;
+  const curiosityPicsToday = `${apiRoversBaseUrl}/spirit${apiParamLatestPhotos}`;
   request.get(curiosityPicsToday, (error, response, curiosityData) => {
     const parsedData5 = JSON.parse(curiosityData);
     res.render("spirit", {
