@@ -11,7 +11,7 @@
             <p>Earth date: <%= picture.earth_date %></p>
             <p>Mars sol: <%= picture.sol %></p>
             <div class="image-container">
-              <a href="">
+              <a href="<%= picture.img_src %>">
                 <img src="<%= picture.img_src %>" alt="from camera <%= picture.camera.name %> on <%= picture.earth_date %>">
               </a>
             </div>
