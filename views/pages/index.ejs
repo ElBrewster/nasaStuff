@@ -5,18 +5,18 @@
     <%- include("../partials/header.ejs") %>
     <main>
       <section>
-        <% parsedData.forEach((picture) => { %>
+
           <article>
-            <h2>Snapshot from camera <%= picture.camera.name %></h2>
-            <p>Earth date: <%= picture.earth_date %></p>
-            <p>Mars sol: <%= picture.sol %></p>
+            <h2>Snapshot from camera <%= parsedData[0].camera.name %></h2>
+            <p>Earth date: <%= parsedData[0].earth_date %></p>
+            <p>Mars sol: <%= parsedData[0].sol %></p>
             <div class="image-container">
-              <a href="<%= picture.img_src %>">
-                <img src="<%= picture.img_src %>" alt="from camera <%= picture.camera.name %> on <%= picture.earth_date %>">
+              <a href="<%= parsedData[0].img_src %>">
+                <img src="<%= parsedData[0].img_src %>" alt="from camera <%= parsedData[0].camera.name %> on <%= parsedData[0].earth_date %>">
               </a>
             </div>
           </article>
-        <% }); %>
+
       </section>
     </main>
     <%- include("../partials/footer.ejs") %>
