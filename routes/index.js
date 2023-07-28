@@ -28,7 +28,7 @@ const apiParamEarthDate = `/photos?earth_date=${today}&page=1&api_key=${apiKey}`
 
 const apiParamLatestPhotos = `/latest_photos?api_key=${apiKey}`;
 //https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY
-const currentPhoto = `${apiRoversUrlDefault}${apiParamSol}`;
+const currentPhoto = `${apiRoversUrlDefault}${apiParamLatestPhotos}`;
 const picturesToday = `${apiRoversUrl}/roverName${apiParamEarthDate}`;
 // template ^
 router.use((req, res, next) => {
@@ -42,15 +42,9 @@ router.get('/', function(req, res, next) {
   request.get(currentPhoto, (error, response, roverData) => {
     const parsedData = JSON.parse(roverData);
     res.render("index", {
-      parsedData: parsedData.photos
+      parsedData: parsedData.latest_photos
     })
   });
-  // request.get(picturesToday, (error, response, roverData) => {
-  //   const parsedData = JSON.parse(roverData);
-  //   res.render("index", {
-  //     parsedData: parsedData.photos
-  //   })
-  // })
 });
 
 module.exports = router;

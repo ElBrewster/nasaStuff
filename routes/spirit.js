@@ -31,10 +31,10 @@ router.get('/', function(req, res, next) {
   //     parsedData: parsedData.photos
   //   })
   // });
-  request.get(picturesToday, (error, response, roverData) => {
+  request.get(mostRecentPhotos, (error, response, roverData) => {
     const parsedData = JSON.parse(roverData);
     res.render("index", {
-      parsedData: parsedData.photos
+      parsedData: parsedData.latest_photos
     })
   })
 });
