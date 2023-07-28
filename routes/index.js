@@ -38,7 +38,7 @@ router.use((req, res, next) => {
   res.locals.apiRoversUrl = apiRoversUrl;
   res.locals.apiParamEarthDate = apiParamEarthDate;
   next();
-})
+});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -58,7 +58,7 @@ router.get("/curiosity", (req, res, next) => {
       parsedData2: parsedData2.latest_photos
     })
   })
-})
+});
 
 router.get("/opportunity", (req, res, next) => {
   const curiosityPicsToday = `${apiRoversUrl}/opportunity${apiParamLatestPhotos}`;
@@ -68,7 +68,7 @@ router.get("/opportunity", (req, res, next) => {
       parsedData3: parsedData3.latest_photos
     })
   })
-})
+});
 
 router.get("/perseverance", (req, res, next) => {
   const curiosityPicsToday = `${apiRoversUrl}/perseverance${apiParamLatestPhotos}`;
@@ -78,7 +78,7 @@ router.get("/perseverance", (req, res, next) => {
       parsedData4: parsedData4.latest_photos
     })
   })
-})
+});
 
 router.get("/spirit", (req, res, next) => {
   const curiosityPicsToday = `${apiRoversUrl}/spirit${apiParamLatestPhotos}`;
@@ -88,5 +88,6 @@ router.get("/spirit", (req, res, next) => {
       parsedData5: parsedData5.latest_photos
     })
   })
-})
+});
+
 module.exports = router;
