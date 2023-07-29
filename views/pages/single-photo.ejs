@@ -3,12 +3,12 @@
   <%- include("../partials/head.ejs") %>
   <body>
     <header>
-        <h1>Photo #{} </h1>
+        <h1>Photo <%= parsedData.id %> </h1>
     </header>
     <main>
-        <p>Taken on sol #{}, earth date: earth_date</p>
-        <p>camera.full_name <span>nickname "camera.name"</span></p>
-        <a href="img_src">Link to full-size photograph</a>
+        <p>Taken on sol <%= parsedData.sol %>, earth date: <%= parsedData.earth_date %></p>
+        <p><%= parsedData.camera?.full_name %> <span>nickname "<%= parsedData.camera?.name %>"</span></p>
+        <a href="<%= parsedData.img_src %>">Link to full-size photograph</a>
         <h3>Rover Manifest</h3>
     </main>
     <%- include("../partials/footer.ejs") %>

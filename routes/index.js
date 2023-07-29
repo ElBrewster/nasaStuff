@@ -21,6 +21,7 @@ const roversList = ["curiosity", "opportunity", "perseverance", "spirit"];
 // * Mars Rover Photos
 const apiRoversUrlDefault = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity";
 const apiRoversBaseUrl = "https://api.nasa.gov/mars-photos/api/v1/rovers";
+const latestPhotosStr = "/latest_photos?";
 //need rover name after this url piece ^
 const apiParamSol = `/photos?sol=1000&api_key=${apiKey}`;
 const apiParamCamera = `/photos?sol=1000&camera=fhaz&api_key=${apiKey}`;
@@ -61,9 +62,6 @@ router.get("/curiosity", (req, res, next) => {
   })
 });
 
-router.get("/curiosity/:id", (req, res, next) => {
-  res.json(req.params.id);
-});
 
 router.get("/opportunity", (req, res, next) => {
   const curiosityPicsToday = `${apiRoversBaseUrl}/opportunity${apiParamLatestPhotos}`;
@@ -71,7 +69,23 @@ router.get("/opportunity", (req, res, next) => {
     const parsedData3 = JSON.parse(curiosityData);
     res.render("opportunity", {
       parsedData3: parsedData3.latest_photos
+    }) 
+  })
+});
+
+router.get("/opportunity/:id", (req, res, next) => {
+  // res.json(req.params.id);
+  const photoId = req.params.id;
+  console.log("wildcard var 'photoId': ", photoId);
+  const thisPhotoUrl = `${apiRoversBaseUrl}/opportunity${latestPhotosStr}id=${photoId}&api_key=${apiKey}`;
+  console.log("this photo url: ", thisPhotoUrl);
+  // res.send(thisPhotoUrl);
+  request.get(thisPhotoUrl, (error, response, singlePhotoData) => {
+    const parsedData = JSON.parse(singlePhotoData);
+    res.render("single-photo", {
+      parsedData: parsedData.latest_photos[0]
     })
+    console.log("parsedData: ", parsedData)
   })
 });
 
