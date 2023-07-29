@@ -5,7 +5,6 @@ const request = require("request");
 const dayjs = require("dayjs");
 var utc = require('dayjs/plugin/utc');
 var timezone = require('dayjs/plugin/timezone');
-// dayjs().format(); 
 dayjs.extend(utc);
 dayjs.extend(timezone);
 let nowObject = dayjs();
@@ -21,20 +20,10 @@ const roversList = ["curiosity", "opportunity", "perseverance", "spirit"];
 // * Mars Rover Photos
 const apiRoversUrlDefault = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity";
 const apiRoversBaseUrl = "https://api.nasa.gov/mars-photos/api/v1/rovers";
-const latestPhotosStr = "/latest_photos?";
-//need rover name after this url piece ^
-const apiParamSol = `/photos?sol=1000&api_key=${apiKey}`;
-const apiParamCamera = `/photos?sol=1000&camera=fhaz&api_key=${apiKey}`;
-const apiPage2 = `/photos?sol=1000&page=2&api_key=${apiKey}`;
-// const apiParamEarthDate = `/photos?earth_date=${today}&api_key=${apiKey}`;≠–
 const apiParamEarthDate = `/photos?earth_date=${today}&page=1&api_key=${apiKey}`;
-
 const apiParamLatestPhotos = `/latest_photos?api_key=${apiKey}`;
-
-
 const currentPhoto = `${apiRoversUrlDefault}${apiParamLatestPhotos}`;
-const picturesToday = `${apiRoversBaseUrl}/roverName${apiParamEarthDate}`;
-// template ^
+
 router.use((req, res, next) => {
   res.locals.roversList = roversList;
   res.locals.apiRoversBaseUrl = apiRoversBaseUrl;
@@ -42,7 +31,6 @@ router.use((req, res, next) => {
   next();
 });
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
   request.get(currentPhoto, (error, response, roverData) => {
     const parsedData = JSON.parse(roverData);
@@ -93,27 +81,5 @@ router.get("/spirit", (req, res, next) => {
     })
   })
 });
-
-// router.get("/:rover/:id", (req, res, next) => {
-//   // res.json(req.params.id);
-//   let myRover = req.params.rover;
-//   let myRoverLC = myRover.toLowerCase();
-//   let photoId = req.params.id;
-//   console.log("wildcard var 'myRoverLC: ", myRoverLC);
-//   console.log("wildcard var 'photoId': ", photoId);
-//   const thisPhotoUrl = `${apiRoversBaseUrl}/${myRoverLC}${latestPhotosStr}id=${photoId}&api_key=${apiKey}`;
-//   console.log("this photo url: ", thisPhotoUrl);
-//   // res.send(thisPhotoUrl);
-//   request.get(thisPhotoUrl, (error, response, singlePhotoData) => {
-//     const wildcardData = JSON.parse(singlePhotoData);
-//     let onePhoto = wildcardData["latest_photos"].find((photo) => photo.id === photoId);
-//     console.log("onePhoto: ", onePhoto)
-//     res.render("single-photo", {
-//       onePhoto: onePhoto
-//     })
-//     // console.log("wildcardData: ", wildcardData)
-//   })
-// });
-
 
 module.exports = router;
