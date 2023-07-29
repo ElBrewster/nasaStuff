@@ -73,21 +73,6 @@ router.get("/opportunity", (req, res, next) => {
   })
 });
 
-router.get("/opportunity/:id", (req, res, next) => {
-  // res.json(req.params.id);
-  const photoId = req.params.id;
-  console.log("wildcard var 'photoId': ", photoId);
-  const thisPhotoUrl = `${apiRoversBaseUrl}/opportunity${latestPhotosStr}id=${photoId}&api_key=${apiKey}`;
-  console.log("this photo url: ", thisPhotoUrl);
-  // res.send(thisPhotoUrl);
-  request.get(thisPhotoUrl, (error, response, singlePhotoData) => {
-    const parsedData = JSON.parse(singlePhotoData);
-    res.render("single-photo", {
-      parsedData: parsedData.latest_photos[0]
-    })
-    console.log("parsedData: ", parsedData)
-  })
-});
 
 router.get("/perseverance", (req, res, next) => {
   const curiosityPicsToday = `${apiRoversBaseUrl}/perseverance${apiParamLatestPhotos}`;
@@ -108,5 +93,27 @@ router.get("/spirit", (req, res, next) => {
     })
   })
 });
+
+// router.get("/:rover/:id", (req, res, next) => {
+//   // res.json(req.params.id);
+//   let myRover = req.params.rover;
+//   let myRoverLC = myRover.toLowerCase();
+//   let photoId = req.params.id;
+//   console.log("wildcard var 'myRoverLC: ", myRoverLC);
+//   console.log("wildcard var 'photoId': ", photoId);
+//   const thisPhotoUrl = `${apiRoversBaseUrl}/${myRoverLC}${latestPhotosStr}id=${photoId}&api_key=${apiKey}`;
+//   console.log("this photo url: ", thisPhotoUrl);
+//   // res.send(thisPhotoUrl);
+//   request.get(thisPhotoUrl, (error, response, singlePhotoData) => {
+//     const wildcardData = JSON.parse(singlePhotoData);
+//     let onePhoto = wildcardData["latest_photos"].find((photo) => photo.id === photoId);
+//     console.log("onePhoto: ", onePhoto)
+//     res.render("single-photo", {
+//       onePhoto: onePhoto
+//     })
+//     // console.log("wildcardData: ", wildcardData)
+//   })
+// });
+
 
 module.exports = router;
