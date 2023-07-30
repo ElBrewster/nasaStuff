@@ -93,7 +93,9 @@ router.post("/search", (req, res, next) => {
   request.get(searchDateUrl2, (error, response, oneSolData) => {
     const parsedData = JSON.parse(oneSolData);
     // res.json(parsedData);
-    res.render()
+    res.render("search-results", {
+      parsedData: parsedData.photos
+    })
   })
 })
 
