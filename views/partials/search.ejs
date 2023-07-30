@@ -2,7 +2,7 @@
     <form action="/search" method="post">
         <div>
             <label for="rover-selection">Select Rover:&nbsp;</label>
-            <select id="rover-selection" id="">
+            <select id="rover-selection" name="roverSelection">
                 <option value="curiosity">Curiosity</option>
                 <option value="opportunity">Opportunity</option>
                 <option value="perseverance">Perseverance</option>
@@ -11,7 +11,7 @@
         </div>
         <div>
             <label for="sol-date">Enter Sol Date:&nbsp;</label>
-            <input type="text" placeholder="Sol Date" id="sol-date">
+            <input type="text" placeholder="Sol Date" id="sol-date" name="solDate">
         </div>
         <input type="submit">
     </form>
