@@ -85,6 +85,9 @@ li:hover {
   text-transform: uppercase;
 }
 
+.nav-a:visited {
+  color: hotpink;
+}
 
 li > a:hover {
   color: rgb(51, 51, 51);
