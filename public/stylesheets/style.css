@@ -56,6 +56,7 @@ a {
 .app-title{
   text-transform: none;
 } 
+
 /* ---------------nav bar styling------------------ */
 nav {
   display: flex;
@@ -96,7 +97,6 @@ li > a:hover {
 }
 /* ------------------------------------------------ */
 
-
 main {
   align-items: center;
   display: flex;
@@ -131,16 +131,9 @@ article {
 .image-container {
   background-color: #0A0A0A;
   min-width: 166px;
-  min-height: 166px;
+  min-height: 184px;
 }
 
-/* ---------------rover photo colors------------------ */
-.throw-away {
-  color: #fcd2a0;
-  color: #ffce9d;
-  color: #dabd9f;
-  color: #c19974;
-  color: #896c4e;
-  color: #735943;
-
+.span-h2 {
+  font-size: .8em;
 }
