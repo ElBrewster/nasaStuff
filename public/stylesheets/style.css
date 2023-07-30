@@ -106,6 +106,9 @@ main {
   padding: .5rem;
 }
 
+h2 {
+  padding-bottom: 1rem;
+}
 
 section {
   align-items: center;
@@ -123,13 +126,13 @@ article {
   padding: 1rem;
 }
 
-h2 {
-  padding-bottom: 1rem;
-}
+/* .snapshot-article {
+  min-width: 20rem;
+} */
 
 .image-container {
   background-color: #0A0A0A;
-  min-width: 166px;
+  width: 166px;
   min-height: 184px;
 }
 
