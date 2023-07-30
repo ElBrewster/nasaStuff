@@ -83,16 +83,11 @@ router.get("/spirit", (req, res, next) => {
 });
 
 router.post("/search", (req, res, next) => {
-  // res.send("Sanity Check");
   const searchTerm = req.body.roverSelection;
   const searchDate = req.body.solDate;
-  // https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY
-  // const searchDateUrl = `${apiRoversBaseUrl}/${searchTerm}/photos?sol=${searchDate}&api_key=${apiKey}`;
-  const searchDateUrl2 = `${apiRoversBaseUrl}/curiosity/photos?sol=2&api_key=${apiKey}`;
-  // res.send(searchDateUrl2);
-  request.get(searchDateUrl2, (error, response, oneSolData) => {
+  const searchDateUrl = `${apiRoversBaseUrl}/${searchTerm}/photos?sol=${searchDate}&api_key=${apiKey}`;
+  request.get(searchDateUrl, (error, response, oneSolData) => {
     const parsedData = JSON.parse(oneSolData);
-    // res.json(parsedData);
     res.render("search-results", {
       parsedData: parsedData.photos
     })
@@ -100,4 +95,3 @@ router.post("/search", (req, res, next) => {
 })
 
 module.exports = router;
-// const apiRoversBaseUrl = "https://api.nasa.gov/mars-photos/api/v1/rovers";
