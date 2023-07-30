@@ -98,8 +98,16 @@ li > a:hover {
 }
 /* ------------------------------------------------ */
 
+form,
 .form-nav {
   display: flex;
+  min-width: 100vw;
+}
+
+form {
+  align-items: center;
+  flex: 1;
+  justify-content: space-evenly;
 }
 
 main {
