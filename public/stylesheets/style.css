@@ -152,3 +152,7 @@ footer {
   justify-content: space-evenly;
   min-width: 30vw;
 }
+
+a.link-footer:hover {
+  color: #fcd2a0;
+}
