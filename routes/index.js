@@ -88,7 +88,7 @@ router.post("/search", (req, res, next) => {
   const searchDateUrl = `${apiRoversBaseUrl}/${searchTerm}/photos?sol=${searchDate}&api_key=${apiKey}`;
   request.get(searchDateUrl, (error, response, oneSolData) => {
     const parsedData = JSON.parse(oneSolData);
-    res.render("search-results", {
+    res.render("search", {
       parsedData: parsedData.photos
     })
   })
