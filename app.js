@@ -47,6 +47,3 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-
-// TODO: Add nasa logo that links to the api page into the footer partial
-// TODO: Maybe also add info links to <aside> or <main> to explain things (like martian sol for instance, https://en.wikipedia.org/wiki/Mars_sol)
