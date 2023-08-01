@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <%- include("../partials/head.ejs") %>
+  <body>
+    <%- include("../partials/header.ejs") %>
+    <main>
+      <h2><%= parsedData[0].rover.name %> on Sol <%= parsedData[0].sol %></h2>
+      <section>
+        <% parsedData.forEach((picture) => { %>
+          <%- include("../partials/image-container.ejs", {picture}) %>
+        <% }); %>
+      </section>
+    </main>
+    <%- include("../partials/footer.ejs") %>
+  </body>
+</html>
