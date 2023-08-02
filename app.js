@@ -8,6 +8,20 @@ require("dotenv").config();
 var indexRouter = require('./routes/index');
 
 var app = express();
+// -----------moved bin/www into app.js--------------------
+const { onListening, onError, normalizePort } = require("utils/onListening.js");
+var debug = require('debug')('marsRoversApp:server');
+const http = require("http");
+const port = normalizePort(process.env.PORT || 5050);
+app.set("port", port);
+
+const server = http.createServer(app);
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+// --------------------------------------------------------
 const helmet = require("helmet");
 app.use(helmet({
   contentSecurityPolicy:({
@@ -46,4 +60,3 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
