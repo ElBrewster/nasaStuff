@@ -8,18 +8,19 @@ require("dotenv").config();
 var indexRouter = require('./routes/index');
 
 var app = express();
+const PORT = process.env.PORT || 5050;
+
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
 // -----------moved bin/www into app.js--------------------
-const { onListening, onError, normalizePort } = require("utils/onListening.js");
-var debug = require('debug')('marsRoversApp:server');
-const http = require("http");
-const port = normalizePort(process.env.PORT || 5050);
-app.set("port", port);
+// const { onListening, onError, normalizePort } = require("utils/onListening");
+// var debug = require('debug')('marsRoversApp:server');
+// const http = require("http");
 
-const server = http.createServer(app);
+// const server = http.createServer(app);
 
-server.listen(port);
-server.on('error', onError);
-server.on('listening', onListening);
+// server.listen(port);
+// server.on('error', onError);
+// server.on('listening', onListening);
 
 // --------------------------------------------------------
 const helmet = require("helmet");
