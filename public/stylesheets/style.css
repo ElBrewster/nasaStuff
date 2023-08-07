@@ -194,6 +194,9 @@ nav {
 }
 
 @media (max-width: 600px) {
+  h1 {
+    font-size: x-large;
+  }
   nav {
     display: flex;
     flex-direction: column;
@@ -204,5 +207,11 @@ nav {
   }
   li {
     margin: .25rem;
+  }
+}
+
+@media (max-width: 370px) {
+  h1 {
+    font-size: large;
   }
 }
