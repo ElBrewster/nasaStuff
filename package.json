@@ -2,7 +2,7 @@
   "name": "nasastuff",
   "version": "0.0.0",
   "private": true,
-  "main": "web.js",
+  "main": "app.js",
   "author": "elbie",
   "license": "MIT",
   "engines": {
