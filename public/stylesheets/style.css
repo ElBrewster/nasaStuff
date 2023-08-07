@@ -156,3 +156,32 @@ footer {
 a.link-footer:hover {
   color: #fcd2a0;
 }
+
+/* Media Queries ---------------------------------------- */
+/* 4k screens 3840(2160): */
+@media (min-width: 3840px) {}
+
+/* combined 1536px <= width <= 1919px and 1920px <= width <= 3839px:  */
+@media (1536px <= width <= 3839px) {
+
+
+}
+
+@media (1024px <= width <= 1535px) {
+
+
+}
+
+@media (768px <= width <= 1023px) {
+
+
+}
+
+@media (540px <= width <= 767px) {
+
+
+}
+
+@media (279px <= width <= 539px) {
+
+}
