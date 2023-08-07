@@ -13,8 +13,11 @@ Robert Bunch's course "Just Express (with a bunch of node and http). In detail."
 - [Link](https://mars-rovers-photo-journal-2b03be7a42c1.herokuapp.com/) to Mars Rover Photo Journal
 
 ### Screenshots
+<img width="1344" alt="rovers app screenshot" src="https://github.com/ElBrewster/Mars-Rover-Photo-Journal/assets/113723085/6a502373-808c-4432-b800-3d5536a5a1cf">
 
 ## Tech Stack
+
+    ![my badge](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
 <div>
     <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" width="100" height="30" />
