@@ -88,6 +88,7 @@ li:hover {
   font-style: italic;
   padding: 0 0 0 1rem;
 }
+/* ^ this needs to be a bright color or it will blend into the page  */
 
 .nav-a {
   color: #735943;
@@ -184,11 +185,17 @@ a.link-footer:hover {
 
 }
 
-@media (540px <= width <= 767px) {
-
+@media (600px <= width <= 767px) {
+nav {
+  display: flex;
+  flex-direction: column;
+}
 
 }
 
-@media (279px <= width <= 539px) {
-
+@media (279px <= width <= 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
 }
