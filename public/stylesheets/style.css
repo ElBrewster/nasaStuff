@@ -58,8 +58,12 @@ a {
 } 
 
 /* ---------------nav bar styling------------------ */
+
 nav {
+  border-bottom: 2px solid gray;
+  border-top: 2px solid gray;
   display: flex;
+  background-color: #32291d;
 }
 
 ul {
@@ -88,6 +92,7 @@ li:hover {
   font-style: italic;
   padding-left: 2rem;
   padding-bottom: 0;
+}
 /* ^ this needs to be a bright color or it will blend into the page  */
 
 .nav-a {
@@ -103,6 +108,7 @@ li:hover {
 li > a:hover {
   color: rgb(51, 51, 51);
 }
+
 /* ------------------------------------------------ */
 
 main {
