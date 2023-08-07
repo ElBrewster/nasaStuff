@@ -187,18 +187,22 @@ a.link-footer:hover {
 }
 
 @media (600px <= width <= 767px) {
-nav {
-  display: flex;
-  flex-direction: column;
-}
-main > h2 {
-  font-size: x-large;
-}
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul {
+    padding: .5rem;
+  }
+  main > h2 {
+    font-size: x-large;
+  }
 }
 
 @media (max-width: 600px) {
   h1 {
-    font-size: x-large;
+    font-size: 1.8rem;
   }
   nav {
     display: flex;
@@ -207,6 +211,7 @@ main > h2 {
   ul {
     display: flex;
     flex-wrap: wrap;
+    padding: .5rem;
   }
   li {
     margin: .25rem;
@@ -216,7 +221,20 @@ main > h2 {
   }
 }
 
+@media (460px <= width <= 560px) {
+  ul {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;    
+    padding: .25rem;
+  }
+/* need to fix dangling "spirit" link so that it's 2 links per row in the nav */
+}
+
 @media (max-width: 460px) {
+  h1 {
+    font-size: 1.6rem;
+  }
   main > h2 {
     font-size: 1rem;
   }
@@ -224,9 +242,21 @@ main > h2 {
 
 @media (max-width: 370px) {
   h1 {
-    font-size: large;
+    font-size: 1.3rem;
   }
   main > h2 {
     font-size: .9rem;
+  }
+}
+
+@media (max-width: 300px) {
+  ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;    
+    padding: .25rem;
+  }
+  li {
+    margin: .25rem;
   }
 }
