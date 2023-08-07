@@ -82,6 +82,14 @@ li:hover {
   color: rgb(51, 51, 51);
 }
 
+.nav-header {
+  align-self: center;
+  font-size: 1rem;
+  font-style: italic;
+  padding: 0 0 0 1rem;
+}
+/* ^ this needs to be a bright color or it will blend into the page  */
+
 .nav-a {
   color: #735943;
   padding: .25rem .75rem;
@@ -107,6 +115,7 @@ main {
 }
 
 h2 {
+  font-weight: 400;  
   padding-bottom: 1rem;
 }
 
@@ -155,4 +164,99 @@ footer {
 
 a.link-footer:hover {
   color: #fcd2a0;
+}
+
+/* Media Queries ---------------------------------------- */
+/* 4k screens 3840(2160): */
+@media (min-width: 3840px) {}
+
+/* combined 1536px <= width <= 1919px and 1920px <= width <= 3839px:  */
+@media (1536px <= width <= 3839px) {
+
+
+}
+
+@media (1024px <= width <= 1535px) {
+
+
+}
+
+@media (768px <= width <= 1023px) {
+
+
+}
+
+@media (600px <= width <= 767px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul {
+    padding: .5rem;
+  }
+  main > h2 {
+    font-size: x-large;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem;
+  }
+  li {
+    margin: .25rem;
+  }
+  main > h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (460px <= width <= 560px) {
+  ul {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;    
+    padding: .25rem;
+  }
+/* TODO: need to fix dangling "spirit" link so that it's 2 links per row in the nav */
+}
+
+@media (max-width: 460px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  main > h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 370px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+  main > h2 {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 300px) {
+  ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;    
+    padding: .25rem;
+  }
+  li {
+    margin: .25rem;
+  }
 }
