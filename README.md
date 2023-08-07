@@ -29,7 +29,7 @@ Robert Bunch's course "Just Express (with a bunch of node and http). In detail."
 
 ## Installation Instructions
 
-1. ![Click](https://github.com/ElBrewster/Mars-Rover-Photo-Journal) to open the repository.
+1. [Click](https://github.com/ElBrewster/Mars-Rover-Photo-Journal) to open the repository.
 2. Click the "Fork" button. (This will create a user copy of the repository.)
 3. Open the Terminal application.
 4. In Terminal, use the "cd" command to navigate to where the local repository will live.
@@ -44,5 +44,5 @@ Robert Bunch's course "Just Express (with a bunch of node and http). In detail."
 
 This app was made by El Brewster ✨
 You can find me at:
-_ [GitHub](https://github.com/ElBrewster)
-_ [LinkedIn](https://www.linkedin.com/in/el-brewster-9817b0255/)
+[GitHub](https://github.com/ElBrewster)
+[LinkedIn](https://www.linkedin.com/in/el-brewster-9817b0255/)
