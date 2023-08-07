@@ -10,7 +10,7 @@ Robert Bunch's course "Just Express (with a bunch of node and http). In detail."
 
 ### Deployed App
 
-- [Link](https://mars-rovers-photo-journal-2b03be7a42c1.herokuapp.com/) to Mars Rover Photo Journal
+- [Link](https://mars-rovers-photo-journal-2b03be7a42c1.herokuapp.com/perseverance) to Mars Rover Photo Journal
 
 ### Screenshots
 <img width="1344" alt="rovers app screenshot" src="https://github.com/ElBrewster/Mars-Rover-Photo-Journal/assets/113723085/6a502373-808c-4432-b800-3d5536a5a1cf">
