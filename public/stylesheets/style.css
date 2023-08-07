@@ -193,9 +193,16 @@ nav {
 
 }
 
-@media (279px <= width <= 600px) {
+@media (max-width: 600px) {
   nav {
     display: flex;
     flex-direction: column;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    margin: .25rem;
   }
 }
