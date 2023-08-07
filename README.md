@@ -1,8 +1,8 @@
 # Mars Rover Photo Journal
 
-This app is a server rendered application deployed to Heroku using Express.js running on Node.js with the EJS template engine library.
+This project is a server rendered application deployed to Heroku using Express.js running on Node.js with the EJS template engine library.
 
-This project displays photos from one of the publicly available NASA APIs. My goal for it from the start has been to process data I enjoy, and to focus primarily on Express.js web application framework. Since most courses and walkthroughs that I have encountered for fullstack software projects (such as PERN, MERN, and MEAN) rush through the Express portion, I found myself wanting a more in-depth understanding of this middleware, as well as the http request and response cycle, and a more thorough understanding of Express's file structure in `routes/views` for creating routes on a site or for creating API paths.
+This app displays photos from one of the publicly available NASA APIs. My goal for it from the start has been to work with data I enjoy, and to focus primarily on the Express.js web application framework. Most courses and walkthroughs that I have encountered for Node.js fullstack software projects (such as PERN, MERN, and MEAN) rush through the Express portion, and I felt I was missing out on a more in-depth understanding of this middleware. I also wanted more experience with the http request and response cycle, and a more thorough understanding of Express's file structure in `routes/views` for creating routes on a site or for creating API paths.
 
 Robert Bunch's course "Just Express (with a bunch of node and http). In detail." was invaluable in helping me create this.
 
@@ -43,7 +43,7 @@ Express.js Heroku EJS
 9. In Terminal, use the "cd" command to navigate into the newly created directory. Enter `npm i` to install dependancies.
 10. Open the local repository in VS Code by typing: `code .`
 11. Type `node app.js` into the terminal and view the app in your browser at `localhost:8000`.
-12. Click on the links on the main page to view the current photos for different rovers, or add a rover name to the url: `localhost:8000/perseverance`.
+12. Click on the links on the main page to view today's photos for different rovers, or add a rover name to the url: `localhost:8000/perseverance`.
 
 This app was made by El Brewster ✨
 You can find me at:
