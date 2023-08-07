@@ -86,8 +86,8 @@ li:hover {
   align-self: center;
   font-size: 1rem;
   font-style: italic;
-  padding: 0 0 0 1rem;
-}
+  padding-left: 2rem;
+  padding-bottom: 0;
 /* ^ this needs to be a bright color or it will blend into the page  */
 
 .nav-a {
