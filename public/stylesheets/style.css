@@ -228,7 +228,7 @@ a.link-footer:hover {
     flex-wrap: wrap;    
     padding: .25rem;
   }
-/* need to fix dangling "spirit" link so that it's 2 links per row in the nav */
+/* TODO: need to fix dangling "spirit" link so that it's 2 links per row in the nav */
 }
 
 @media (max-width: 460px) {
