@@ -17,7 +17,7 @@ Robert Bunch's course "Just Express (with a bunch of node and http). In detail."
 
 ## Tech Stack
 
-    ![my badge](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+    !\[my badge\](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
 <div>
     <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" width="100" height="30" />
