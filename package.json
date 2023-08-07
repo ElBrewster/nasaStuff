@@ -2,6 +2,9 @@
   "name": "nasastuff",
   "version": "0.0.0",
   "private": true,
+  "main": "web.js",
+  "author": "elbie",
+  "license": "MIT",
   "engines": {
     "node": "14.x"
   },

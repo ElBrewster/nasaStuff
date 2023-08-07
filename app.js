@@ -8,7 +8,10 @@ require("dotenv").config();
 var indexRouter = require('./routes/index');
 
 var app = express();
-const PORT = process.env.PORT || 5050;
+let PORT = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
 // -----------moved bin/www into app.js--------------------
