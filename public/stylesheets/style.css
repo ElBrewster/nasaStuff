@@ -198,9 +198,14 @@ a.link-footer:hover {
     flex-direction: column;
   }
 
+  .nav-header {
+    padding: 0;
+  }
+
   ul {
     padding: .5rem;
   }
+
   main > h2 {
     font-size: x-large;
   }
@@ -214,6 +219,11 @@ a.link-footer:hover {
     display: flex;
     flex-direction: column;
   }
+  
+  .nav-header {
+    padding: 0;
+  }
+
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -241,6 +251,9 @@ a.link-footer:hover {
 @media (max-width: 460px) {
   h1 {
     font-size: 1.6rem;
+  }
+  .nav-header {
+    padding: 0;
   }
   main > h2 {
     font-size: 1rem;

@@ -14,18 +14,7 @@ if (PORT == null || PORT == "") {
 }
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
-// -----------moved bin/www into app.js--------------------
-// const { onListening, onError, normalizePort } = require("utils/onListening");
-// var debug = require('debug')('marsRoversApp:server');
-// const http = require("http");
 
-// const server = http.createServer(app);
-
-// server.listen(port);
-// server.on('error', onError);
-// server.on('listening', onListening);
-
-// --------------------------------------------------------
 const helmet = require("helmet");
 app.use(helmet({
   contentSecurityPolicy:({
@@ -36,7 +25,6 @@ app.use(helmet({
   })
 }));
 
-// view engine setup
 app.set('views', path.join(__dirname, 'views/pages'));
 app.set('view engine', 'ejs');
 
@@ -48,18 +36,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 
-// catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
 
-// error handler
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
   res.status(err.status || 500);
   res.render('error');
 });
