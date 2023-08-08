@@ -8,7 +8,7 @@ This project is a server rendered application deployed to Heroku using Express.j
 ![Static Badge](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=black&color=white)
 ![Static Badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
-![Static Badge](https://img.shields.io/badge/ejs-a91e50?style=for-the-badge&logo=ejs&color=#b4ca66)
+![Static Badge](https://img.shields.io/badge/ejs-a91e50?style=for-the-badge&logo=ejs&logoColor=#b4ca66&color=#a91e50)
 ![Static Badge](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
