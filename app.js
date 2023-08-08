@@ -14,18 +14,7 @@ if (PORT == null || PORT == "") {
 }
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
-// -----------moved bin/www into app.js--------------------
-// const { onListening, onError, normalizePort } = require("utils/onListening");
-// var debug = require('debug')('marsRoversApp:server');
-// const http = require("http");
 
-// const server = http.createServer(app);
-
-// server.listen(port);
-// server.on('error', onError);
-// server.on('listening', onListening);
-
-// --------------------------------------------------------
 const helmet = require("helmet");
 app.use(helmet({
   contentSecurityPolicy:({
