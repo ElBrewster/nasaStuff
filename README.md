@@ -22,10 +22,10 @@ This project is a server rendered application deployed to Heroku using Express.j
 ### Screenshots
 <img width="1344" alt="rovers app screenshot" src="https://github.com/ElBrewster/Mars-Rover-Photo-Journal/assets/113723085/6a502373-808c-4432-b800-3d5536a5a1cf">
 
-## Goals
+## Purpose
 This app displays photos from one of the publicly available NASA APIs. My goal for it from the start has been to work with data I enjoy, and to focus primarily on the Express.js web application framework. Most courses and walkthroughs that I have encountered for Node.js fullstack software projects (such as PERN, MERN, and MEAN) rush through the Express portion, and I felt I was missing out on a more in-depth understanding of this middleware. I also wanted more experience with the http request and response cycle, and a more thorough understanding of Express's file structure in `routes/views` for creating routes on a site or for creating API paths.
 
-Robert Bunch's course "Just Express (with a bunch of node and http). In detail." was invaluable in helping me create this.
+Robert Bunch's [course](https://gale.udemy.com/course/just-express-with-a-bunch-of-node-and-http-in-detail/learn/lecture/11301584#overview) "Just Express (with a bunch of node and http). In detail." was instrumental in helping me create this.
 
 ## Installation Instructions
 1. [Click](https://github.com/ElBrewster/Mars-Rover-Photo-Journal) to open the repository.
