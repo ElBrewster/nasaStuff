@@ -42,6 +42,7 @@ Robert Bunch's [course](https://gale.udemy.com/course/just-express-with-a-bunch-
 12. Click on the links on the main page to view today's photos for different rovers, or add a rover name to the url: `localhost:8000/perseverance`.
 
 This app was made by El Brewster ✨
+
 You can find me at:
 ![Static Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=%23181717&color=white&link=https%3A%2F%2Fgithub.com%2FElBrewster)
-[LinkedIn](https://www.linkedin.com/in/el-brewster-9817b0255/)
+![Static Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=%230A66C2&color=white&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fel-brewster%2F)
