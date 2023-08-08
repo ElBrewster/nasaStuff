@@ -43,5 +43,5 @@ Robert Bunch's [course](https://gale.udemy.com/course/just-express-with-a-bunch-
 
 This app was made by El Brewster ✨
 You can find me at:
-[GitHub](https://github.com/ElBrewster)
+![Static Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=%23181717&color=white&link=https%3A%2F%2Fgithub.com%2FElBrewster)
 [LinkedIn](https://www.linkedin.com/in/el-brewster-9817b0255/)
