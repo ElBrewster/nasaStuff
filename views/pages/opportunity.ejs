@@ -5,7 +5,10 @@
     <%- include("../partials/header.ejs") %>
     <%- include("../partials/nav.ejs") %>
     <main>
-      <h2>Opportunity Rover: Most Recent Snapshots</h2>
+      <h2>
+        <span>Opportunity Rover:&nbsp;</span>
+        <span>Most Recent Snapshots</span>
+      </h2>
       <section>
         <% parsedData3.forEach((picture) => { %>
           <%- include("../partials/image-container.ejs", {picture}) %>

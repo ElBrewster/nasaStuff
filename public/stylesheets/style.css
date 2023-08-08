@@ -232,6 +232,7 @@ a.link-footer:hover {
     align-items: center;
     display: flex;
     flex-wrap: wrap;    
+    justify-content: center;
     padding: .25rem;
   }
 /* TODO: need to fix dangling "spirit" link so that it's 2 links per row in the nav */
@@ -244,6 +245,16 @@ a.link-footer:hover {
   main > h2 {
     font-size: 1rem;
   }
+  ul {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 424px) {
+  article {
+    max-width: 190px;
+    padding: .5rem;
+  }
 }
 
 @media (max-width: 370px) {
@@ -251,6 +262,8 @@ a.link-footer:hover {
     font-size: 1.3rem;
   }
   main > h2 {
+    display: flex;
+    flex-direction: column;
     font-size: .9rem;
   }
 }
