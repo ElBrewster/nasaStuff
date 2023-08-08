@@ -2,19 +2,6 @@
 
 This project is a server rendered application deployed to Heroku using Express.js running on Node.js with the EJS template engine library.
 
-This app displays photos from one of the publicly available NASA APIs. My goal for it from the start has been to work with data I enjoy, and to focus primarily on the Express.js web application framework. Most courses and walkthroughs that I have encountered for Node.js fullstack software projects (such as PERN, MERN, and MEAN) rush through the Express portion, and I felt I was missing out on a more in-depth understanding of this middleware. I also wanted more experience with the http request and response cycle, and a more thorough understanding of Express's file structure in `routes/views` for creating routes on a site or for creating API paths.
-
-Robert Bunch's course "Just Express (with a bunch of node and http). In detail." was invaluable in helping me create this.
-
-## View App
-
-### Deployed App
-
-- [Link](https://mars-rovers-photo-journal-2b03be7a42c1.herokuapp.com/perseverance) to Mars Rover Photo Journal
-
-### Screenshots
-<img width="1344" alt="rovers app screenshot" src="https://github.com/ElBrewster/Mars-Rover-Photo-Journal/assets/113723085/6a502373-808c-4432-b800-3d5536a5a1cf">
-
 ## Tech Stack, Tools, and Libraries
 
 ![Static Badge](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
@@ -27,8 +14,20 @@ Robert Bunch's course "Just Express (with a bunch of node and http). In detail."
 ![Static Badge](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=Udemy&logoColor=white)
 
-## Installation Instructions
+## View App
 
+### Deployed App
+- [Link](https://mars-rovers-photo-journal-2b03be7a42c1.herokuapp.com/perseverance) to Mars Rover Photo Journal
+
+### Screenshots
+<img width="1344" alt="rovers app screenshot" src="https://github.com/ElBrewster/Mars-Rover-Photo-Journal/assets/113723085/6a502373-808c-4432-b800-3d5536a5a1cf">
+
+## Goals
+This app displays photos from one of the publicly available NASA APIs. My goal for it from the start has been to work with data I enjoy, and to focus primarily on the Express.js web application framework. Most courses and walkthroughs that I have encountered for Node.js fullstack software projects (such as PERN, MERN, and MEAN) rush through the Express portion, and I felt I was missing out on a more in-depth understanding of this middleware. I also wanted more experience with the http request and response cycle, and a more thorough understanding of Express's file structure in `routes/views` for creating routes on a site or for creating API paths.
+
+Robert Bunch's course "Just Express (with a bunch of node and http). In detail." was invaluable in helping me create this.
+
+## Installation Instructions
 1. [Click](https://github.com/ElBrewster/Mars-Rover-Photo-Journal) to open the repository.
 2. Click the "Fork" button. (This will create a user copy of the repository.)
 3. Open the Terminal application.
