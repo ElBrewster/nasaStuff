@@ -5,8 +5,8 @@
   "author": "elbie",
   "license": "MIT",
   "engines": {
-    "node": "18.16.0",
-    "npm": "9.8.1"
+    "node": "18",
+    "npm": "9"
   },
   "scripts": {
     "build": "node app.js"
