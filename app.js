@@ -10,7 +10,7 @@ var indexRouter = require('./routes/index');
 var app = express();
 let PORT = process.env.PORT;
 if (PORT == null || PORT == "") {
-  PORT = 8000;
+  PORT = 80;
 }
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
