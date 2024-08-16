@@ -2,6 +2,8 @@
 
 This project is a server rendered application deployed to Heroku using Express.js running on Node.js with the EJS template engine library.
 
+Go to app: [Mars Rover Photo Journal](https://mars-rover-photo-journal-gyf7ofnuya-uc.a.run.app/) 
+- 
 ## Tech Stack, Tools, and Libraries
 
 ![Static Badge](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
@@ -13,11 +15,6 @@ This project is a server rendered application deployed to Heroku using Express.j
 ![Static Badge](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/Udemy-A435F0?style=for-the-badge&logo=Udemy&logoColor=white)
-
-## View App
-
-### Deployed App
-- [Link](https://mars-rover-photo-journal-gyf7ofnuya-uc.a.run.app/) to Mars Rover Photo Journal
 
 ### Screenshots
 <img width="1344" alt="rovers app screenshot" src="https://github.com/ElBrewster/Mars-Rover-Photo-Journal/assets/113723085/6a502373-808c-4432-b800-3d5536a5a1cf">
